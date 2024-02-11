@@ -234,4 +234,37 @@ df_stocks = px.data.stocks()
 
 # Choropleth Maps
 
+# # Polar Charts
+# df_wind = px.data.wind()
+# fig = px.scatter_polar(
+#     df_wind, r='frequency', theta="direction", color="strength", size="frequency", symbol="strength"
+# )
+# fig.show()
+#
+# # Ternary Plots
+#
+# df_exp = px.data.experiment()
+# fig = px.scatter_ternary(df_exp, a="experiment_1", b="experiment_2",c="experiment_3", hover_name="group", color="gender")
+#
+# fig.show()
 
+# Facet Plots
+
+# df_tips = px.data.tips()
+# fig = px.scatter(df_tips, x="total_bill", y="tip", color="smoker", facet_col="sex")
+# fig.show()
+# Animation for scatterplot
+# df_cont = px.data.gapminder()
+# fig = px.scatter(df_cont, x="gdpPercap", y="lifeExp", animation_frame="year", animation_group="country",
+#                  size="pop", color="continent", hover_name='country',
+#                  log_x=True, size_max=55, range_x=[100,100000],
+#                  range_y=[25,90]
+#                  )
+# fig.show()
+
+# fig = px.bar(df_cont, x='continent', y='pop', color='continent',
+#              animation_frame='year', animation_group='continent',
+#              range_y=[0,4000000000]
+#              )
+#
+# fig.show()
